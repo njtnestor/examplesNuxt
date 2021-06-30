@@ -12,6 +12,9 @@ import Navbar from './partials/Navbar'
 export default {
   components: {
     Navbar
+  },
+  head () {
+    return this.$nuxtI18nHead({ addSeoAttributes: true, addDirAttribute: true })
   }
 }
 </script>

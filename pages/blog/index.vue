@@ -28,6 +28,8 @@ export default {
   name: 'Blog',
   async asyncData ({ $content, params, app }) {
     const posts = await $content(`${app.i18n.locale}/blog`).fetch()
+    // const posts = await $content(`${app.i18n.locale}/blog`).where({ title: 'Article1' }).fetch()
+    // const posts = await $content(`${app.i18n.locale}/blog`).where({ age: { $gt: 18 } }).fetch()
 
     if (app.i18n.locale === app.i18n.defaultLocale) {
       return {

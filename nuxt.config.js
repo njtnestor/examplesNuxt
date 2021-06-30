@@ -1,5 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+
+  // mode: 'universal'(default) or 'spa'
+  // target: 'server'(default) or 'static'
   head: {
     title: 'techtalknuxt',
     meta: [
@@ -27,6 +30,11 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  /* components: {
+    dirs: [
+      '~/components/nested'
+    ]
+  }, */
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -69,12 +77,12 @@ export default {
     seo: false
   },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  /* axios: {
+  axios: {
     proxy: true
   },
   proxy: {
     '/api/expandurl/': { target: 'http://expandurl.com', pathRewrite: { '^/api/expandurl/': '/api/v1/' }, changeOrigin: true }
-  }, */
+  },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
@@ -84,6 +92,9 @@ export default {
       background_color: '#ffffff',
       lang: 'en',
       useWebmanifestExtension: false
+    },
+    workbox: {
+      // offlineStrategy: 'NetworkFirst'(Default) or  'CacheFirst'
     }
   },
 

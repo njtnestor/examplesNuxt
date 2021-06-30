@@ -6,6 +6,9 @@
         Show Lazy List
       </b-button>
     </div>
+
+    <NestedComponentNested />
+
     <div>
       <b-button variant="success" @click="testProxy">
         Test proxy
