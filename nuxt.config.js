@@ -78,7 +78,12 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      name: 'Nuxt tech talk',
+      short_name: 'NuxtTT', // install name,
+      theme_color: '#008aff',
+      background_color: '#ffffff',
+      lang: 'en',
+      useWebmanifestExtension: false
     }
   },
 
