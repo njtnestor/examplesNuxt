@@ -8,7 +8,7 @@
       >
         <b-row>
           <b-col lg="9">
-            <h3>{{ post.title }}{{ post.path }}</h3>
+            <h3>{{ post.title }}</h3>
             <p class="text-gray-700 text-base">
               {{ post.description }}
             </p>

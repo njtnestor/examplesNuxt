@@ -51,6 +51,10 @@
         </li>
       </ul>
     </div>
+    <div>
+      Plugin:
+      <multiselect v-model="selectValue" :options="selectOptions" placeholder="Pick a value" />
+    </div>
   </b-container>
 </template>
 
@@ -59,7 +63,9 @@ export default {
   // layout: 'secondary',
   data () {
     return {
-      show: false
+      show: false,
+      selectValue: '',
+      selectOptions: ['example1', 'example2']
     }
   },
   methods: {
@@ -80,3 +86,5 @@ export default {
   }
 }
 </script>
+
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

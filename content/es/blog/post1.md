@@ -1,8 +1,8 @@
 ---
-title: Blog1
-description: Descripcion blog 1
+title: Articulo1
+description: Descripción articulo 1
 category: web
 ---
 
-# Blog 1
+# Articulo 1
 Este es el contenido
